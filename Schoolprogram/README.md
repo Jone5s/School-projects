@@ -6,3 +6,5 @@ The program is supposed to work like a school administration program where the u
 
 It has a lot of debugging messages about constructos and desctructors. The code has few comments as I named the classes and functions in a way that you get a good idea of what it does.
 The variable, function and class names are in finnish as well as the comments.
+
+To compile and run it I used visual studio 2019
