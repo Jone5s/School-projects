@@ -1,5 +1,5 @@
 
-This program was created as a course final project. I got a grade of 5 for this. 
+This program was created as a course final project. I got a grade of 5/5 for this. 
 The programs language is finnish.
 
 The program is supposed to work like a school administration program where the user can manage students, teachers, courses and the relations between them.
