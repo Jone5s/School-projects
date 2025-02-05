@@ -1,0 +1,152 @@
+/* Main styling for auction item container */
+.auction-item {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout styling for auction item content */
+.auction-item__content {
+  display: flex;
+  align-items: center;
+}
+
+/* Improved image styling */
+.auction-item__image img {
+  width: 150px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 6px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+/* Information section styling */
+.auction-item__info {
+  flex-grow: 1;
+}
+
+/* Action area styling */
+.auction-item__actions {
+  text-align: right;
+}
+
+/* Enhanced input styling */
+input[type="number"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+}
+
+/* Modal styling with improved visibility and user experience */
+.auction-item__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  overflow-y: auto;
+  z-index: 1050;
+}
+
+/* Modal header enhancements */
+.auction-item__modal-header {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 3px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Modal content adjustments for better layout */
+.auction-item__modal-content {
+  margin-top: 20px;
+}
+
+/* Responsive and aesthetic image styling within details */
+.auction-item__details img {
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+/* Right-aligned actions within modal for clarity */
+.auction-item__modal-actions {
+  text-align: right;
+  margin-top: 30px;
+}
+
+/* General button styling across the modal for better UX */
+.auction-item__modal-actions button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Focus styles to enhance accessibility */
+.auction-item__modal-actions button:focus {
+  box-shadow: 0 0 0 3px #0056b3;
+}
+
+/* Inverse and danger button styles for distinct actions */
+.auction-item__modal-actions button.inverse,
+.auction-item__modal-actions button.danger {
+  border: none;
+}
+
+.auction-item__modal-actions button.inverse {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.auction-item__modal-actions button.inverse:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.auction-item__modal-actions button.danger {
+  background-color: #ff5252;
+  color: #fff;
+}
+
+.auction-item__modal-actions button.danger:hover {
+  background-color: #ff1744;
+}
+
+.auction-item p {
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.auction-item__description {
+  font-size: 0.5rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.auction-item__modal-content p {
+  font-size: 1.3rem;
+  color: #666;
+  padding: 0 20px;
+  line-height: 1.65;
+}
+
+.auction-item__price-info,
+.auction-item__end-time {
+  font-weight: bold;
+  color: #1a202c;
+}

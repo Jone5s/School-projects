@@ -1,0 +1,51 @@
+/* Central styling for the entire authentication component */
+.authentication {
+  width: 90%;
+  max-width: 30rem; /* Increased max-width for better spacing */
+  margin: 5rem auto; /* Optimized top margin */
+  padding: 2rem; /* Added padding for better visual spacing */
+  background: #ffffff; /* Light background for the form */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  text-align: center;
+}
+
+/* Styling for the header within the authentication block */
+.authentication__header {
+  color: #333; /* Softer color for improved readability */
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold; /* Bold font for emphasis */
+  margin-bottom: 1rem; /* Added bottom margin for spacing */
+}
+
+/* Additional styling for forms within the authentication block */
+.authentication form {
+  margin-bottom: 2rem; /* Increased margin for better separation */
+  padding: 1rem; /* Padding inside the form */
+}
+
+/* Button and Input enhancements for a uniform look */
+.authentication input[type="text"],
+.authentication input[type="password"],
+.authentication input[type="email"],
+.authentication button {
+  width: 100%; /* Full width for inputs and button */
+  padding: 0.75rem; /* Comfortable padding */
+  margin-top: 0.5rem; /* Space between inputs */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Rounded corners to match the form */
+  box-sizing: border-box; /* Proper box sizing */
+}
+
+.authentication button {
+  background-color: #007bff; /* Vibrant button color */
+  color: white; /* Text color for contrast */
+  font-weight: bold; /* Bold text for button */
+  border: none; /* Remove border for cleaner look */
+  cursor: pointer; /* Cursor pointer for interactivity */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.authentication button:hover {
+  background-color: #0056b3; /* Darker shade on hover for interaction */
+}

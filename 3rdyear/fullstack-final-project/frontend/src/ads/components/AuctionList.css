@@ -1,0 +1,34 @@
+/* AuctionsList.css */
+  
+  .auctions-dropdown {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .auctions-dropdown label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .auctions-dropdown select {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+  }
+
+
+  
+  .auction-item:hover {
+    background-color: #f1f3f5;
+    border-color: #adb5bd;
+  }
+  
+  .auction-item-details {
+    flex-grow: 1;
+  }
+  
+  

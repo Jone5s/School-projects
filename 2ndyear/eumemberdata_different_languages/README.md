@@ -206,73 +206,6 @@ JOIN
 ON all_countries.capital = all_capitals.city_id;
 ```
 
-## Generating an ER diagram
-
-You can use [SchemaCrawler](https://www.schemacrawler.com/index.html) to generate
-an Entity-Relationship (ER) diagram from the database schema. (When designing a
-database, it is probably better to start with an ER diagram, and then proceed to
-define the schema based on that.)
-
-This [Bash script](https://gist.github.com/dannguyen/f056d05bb7fec408bb7c14ea1552c349#file-script-schemacrawler-on-macos-sh)
-can be used to install SchemaCrawler locally, so that you can invoke it simply with the
-command `schemacrawler` and the necessary options.
-
-The ER diagram of the database in PNG format can be created with the following command:
-
-```
-schemacrawler --server sqlite --database=eumemberdata.sqlite3 \
-    --info-level=standard --command=schema \
-    --outputformat=png --output-file=eumemberdata-schema.png
-```
-
-This is the result:
-
-![ER diagram of the database](./eumemberdata-schema.png)
-
-## JSON output
-
-To use the EU member data in a mobile application, the aim is to make
-a JSON file with the following format:
-
-```json
-{"countries":[
-    {
-      "code": "FI",
-      "name": {
-        "en": "Finland",
-        "fi": "Suomi"
-      },
-      "capital": {
-        "name": {
-          "en": "Helsinki",
-          "fi": "Helsinki"
-        },
-        "coordinate": {
-          "longitude": 24.9375,
-          "latitude": 60.1708
-        }
-      },
-      "area": 338435,
-      "population": {
-        "population": 5451270,
-        "year": 2014
-      },
-      "currency": "EUR",
-      "joined": {
-        "union": "1995-01-01",
-        "euro": "1999-01-01",
-        "schengen": "2001-03-25"
-      }
-    }
-]}
-```
-
-The above sample is abbreviated; the final JSON should include names for
-the countries and cities in all the languages.
-
-Use the Python script `generate.py` to generate a JSON document with
-all the information in the database.
-
 ## Timeline of EU events
 
 This repository contains several implementations of a timeline of EU events, written in
@@ -304,5 +237,3 @@ An example of the timeline:
 2015-01-01: Lithuania joined the Eurozone.
 2020-01-31: United Kingdom exited the EU.
 ```
-
-*Challenge:* Can you implement this timeline in SQL?

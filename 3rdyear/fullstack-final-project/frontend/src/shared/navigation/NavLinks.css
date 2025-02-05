@@ -1,0 +1,73 @@
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #333; /* Added a subtle background */
+  margin-right: 100px;
+}
+
+.nav-links li {
+  margin: 1rem;
+  transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.nav-links li:hover {
+  transform: scale(1.1); /* Scale up list items on hover */
+}
+
+.nav-links a {
+  border: 1px solid transparent;
+  color: white; /* Changed text color for better contrast */
+  text-decoration: none;
+  padding: 0.75rem 1.5rem; /* Increased padding for a better touch area */
+  border-radius: 4px; /* Added rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover */
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a.active {
+  background: #ffd900;
+  color: #333;
+  border-color: #ffd900;
+}
+
+.nav-links button {
+  cursor: pointer;
+  border: 2px solid white; /* More prominent border */
+  color: white;
+  background: transparent;
+  padding: 0.75rem 1.5rem;
+  font: inherit;
+  border-radius: 4px; /* Consistent rounded corners */
+  transition: all 0.3s; /* Unified transition for all states */
+  margin-right: 50px;
+}
+
+.nav-links button:focus {
+  outline: 2px solid #ffd900; /* More noticeable focus outline */
+}
+
+.nav-links button:hover,
+.nav-links button:active {
+  background: #ffd900;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-evenly; /* Improved spacing in row layout */
+    background: transparent; /* Clear background on wider screens */
+  }
+
+  .nav-links li {
+    margin: 0 1rem; /* Adjusted margins for better spacing */
+  }
+}

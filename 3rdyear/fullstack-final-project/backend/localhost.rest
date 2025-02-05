@@ -1,0 +1,82 @@
+GET {{server}}/health
+
+###
+GET {{server}}/api/ads
+
+###
+GET {{server}}/api/ads/2
+
+###
+POST {{server}}/api/users/signup
+Content-Type: application/json
+
+{
+  "name": "Allan Smith",
+  "email": "allan@smith.com",
+  "password": "allan12345"
+}
+
+###
+# @name login
+POST {{server}}/api/users/login
+Content-Type: application/json
+
+{
+  "email": "allan@smith.com",
+  "password": "allan12345"
+}
+
+###
+
+DELETE  {{server}}/api/ads/17
+Content-Type: application/json
+Authorization: BEARER {{authToken}}
+
+{
+  "id":14
+}
+
+###
+
+POST {{server}}/api/ads
+Content-Type: application/json
+Authorization: BEARER {{authToken}}
+
+{
+  "make": "BMW",
+  "model": "M8",
+  "image": "http://localhost:5000/images/bmw_m5.png",
+  "price": 75000,
+  "description": "Latest model with advanced features, high performance engine.",
+  "hp": 560,
+  "fueltype": "Petrol",
+  "displacement": "4.4",
+  "end_time": "2024-12-31 23:59:59"
+}
+###
+
+
+PUT {{server}}/api/ads
+Content-Type: application/json
+Authorization: BEARER {{authToken}}
+
+{
+  "id": 17,
+  "make": "BMW",
+  "model": "M8",
+  "image": "http://localhost:5000/images/bmw_m5.png",
+  "price": 75000,
+  "description": "Latest model with advanced features, high performance engine.",
+  "hp": 560,
+  "fueltype": "Petrol",
+  "displacement": "4.4",
+  "end_time": "2024-12-31 23:59:59",
+  "creatorId": "4ca34f73-2098-48e6-8101-c3d220966bf4"
+}
+
+
+###
+@authToken = {{login.response.body.token}}
+@server = http://localhost:5000
+
+#@server = http://172.16.5.18:5000
