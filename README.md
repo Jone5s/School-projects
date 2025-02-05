@@ -1,7 +1,8 @@
-# Main
+# School Projects Repository  
 
-Here are some of the larger school projects I have created that I thought were worth showing off.
+This repository contains some of the school projects I've worked on.  
 
-Most of the comments and names in the codes are in finnish.
+## Structure  
+Projects are organized into directories based on the academic year they were created.
 
-Theres more about the individual projects in the README files of the directories.
+Feel free to explore the projects and see how they have evolved over time!
