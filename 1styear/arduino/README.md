@@ -1,0 +1,3 @@
+A project implemented in an embedded systems course using C++ and Arduino Nano was a memory game with LEDs. It featured a 2 x 3 LED grid where the LEDs blinked one at a time in a random order. The player had to remember the sequence of the LEDs and input it using a keyboard.
+
+If the player correctly remembered the sequence for that round, a new round began with one additional step in the sequence. If the player entered the sequence incorrectly, they lost the game. At that point, it was checked if the score was a record high; if so, the score was saved. Scores and instructions for the game were displayed on an LCD screen.
