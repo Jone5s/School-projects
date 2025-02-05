@@ -12,10 +12,7 @@ The auctions have an overview card which show basic info on that auction, the us
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/TiTe-5G00EV16-3003/2024-final-project-Jone5s.git
-```
-```bash
-cd 2024-final-project-Jone5s
+cd fullstack-final-project
 ```
 
 ### Create .env files
@@ -58,8 +55,3 @@ This command will start the frontend development server.
 
 ## Accessing the Application
 Once both the backend and frontend servers are running, you can access the application from http://localhost:5173
-
-## Problems and shortcomings
-I couldn´t for the life on me get the backend deployment working. The pipelines run flawlesly and the frontend deploys as it should. I pinpointed the problem to the mysql database, because the /health route works (http://172.16.4.178:5002/health). But after trying everything I could think of and everything suggested in slack, google and chagpt, nothing worked. Now I just dont have the time to try to fix it. I´m very disappointed I couldnt get it working 😢
-
-The frontend runs at http://172.16.4.178:80, but its not of much use, as it crashes straight away, as it tries to fetch from the backend that doesn´t work.
