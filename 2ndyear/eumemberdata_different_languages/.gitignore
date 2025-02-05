@@ -1,0 +1,22 @@
+.DS_Store
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+
+# Java / Kotlin
+*.jar
+
+# Visual Studio Code
+.vscode/
+
+*.pdf
+
+derby.log
+
+# SQLite
+*.sqlite3
+
+# PostgreSQL
+*.dump
